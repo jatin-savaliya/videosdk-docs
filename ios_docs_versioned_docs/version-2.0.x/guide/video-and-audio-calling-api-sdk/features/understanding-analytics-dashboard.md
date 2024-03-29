@@ -12,6 +12,7 @@ keywords:
   - collaboration
 image: img/videosdklive-thumbnail.jpg
 sidebar_position: 1
+unlisted: true
 slug: understanding-analytics-dashboard
 ---
 
