@@ -5,7 +5,7 @@ hide_table_of_contents: false
 description: Video SDK and Audio SDK, developers need to implement a token server. This requires efforts on both the front-end and backend.
 sidebar_label: Recording Events
 pagination_label: Recording Events
-keywords:
+keywords: 
   - audio calling
   - video calling
   - real-time communication
@@ -17,16 +17,16 @@ slug: recording-events
 
 # Recording Events - React
 
-VideoSDK provides `onRecordingStateChanged` event which will notify you of the current state of recording for the meeting.
+VideoSDK provides the `onRecordingStateChanged()` event, which notifies you of the current state of recording for the meeting.
 
-### onRecordingStateChanged
+### onRecordingStateChanged()
 
-- This event will be triggered when the meeting's recording status changed.
-- This event can be subscribed from the `useMeeting` hook.
+- This event is triggered when the recording status of the meeting changes. 
+- It can be subscribed to using the `useMeeting` hook.
 
 ### Example
 
-Here is the usage of the event mentioned in this page.
+Here is an example demonstrating the usage of the event mentioned on this page.
 
 ```javascript
 import { Constants, useMeeting } from "@videosdk.live/react-sdk";

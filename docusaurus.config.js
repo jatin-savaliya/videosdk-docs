@@ -43,11 +43,7 @@ module.exports = {
       apiKey: "44f55d0f080cb710e9456cbf632452e4",
       indexName: "VIDEO_SDK",
       contextualSearch: true,
-      // searchParameters: {},
-      // replaceSearchResultPathname: {
-      //   from: "/docs/",
-      //   to: "/search",
-      // },
+      searchParameters: {},
     },
     colorMode: {
       defaultMode: "dark",
@@ -475,11 +471,11 @@ module.exports = {
   ],
   staticDirectories: ["static"],
   scripts: [
-    {
-      // Page sense
-      src: "https://cdn-in.pagesense.io/js/zujotechpvtltd/8c69e67587b74006a3927185dd663808.js",
-      async: true,
-    },
+    // {
+    //   // Page sense
+    //   src: "https://cdn-in.pagesense.io/js/zujotechpvtltd/8c69e67587b74006a3927185dd663808.js",
+    //   async: true,
+    // },
     // {
     //   async: true,
     //   src: "https://tag.clearbitscripts.com/v1/pk_5a551fd702b6e3a8c82e829304fd0d60/tags.js",
@@ -489,13 +485,17 @@ module.exports = {
     //   src: "https://cdn.videosdk.live/static-sites-scripts/product-hunt.js",
     //   async: true,
     // },
+    // {
+    //   // Zoho Sales IQ
+    //   src: "https://docs.videosdk.live/js/sales-iq.js",
+    //   async: true,
+    // },
+    // {
+    //   src: "https://docs.videosdk.live/js/getkoala.js",
+    //   async: true,
+    // },
     {
-      // Zoho Sales IQ
-      src: "https://docs.videosdk.live/js/sales-iq.js",
-      async: true,
-    },
-    {
-      src: "https://docs.videosdk.live/js/getkoala.js",
+      src: "https://docs.videosdk.live/js/gtm.js",
       async: true,
     },
     // Amplitude

@@ -69,21 +69,21 @@ Above mentioned encoder configurations are valid for both, landscape as well as 
   - type: `String`
   - required: `false`
   - Allowed values : `user` | `environment`
-  - It will specifiy whether to use front or back camera for the video track.
+  - It will specify whether to use front or back camera for the video track.
 
 - **optimizationMode**
 
   - type: `String`
   - required: `false`
   - Allowed values: `motion` | `text` | `detail`
-  - It will specifiy the optimization mode for the video track being generated.
+  - It will specify the optimization mode for the video track being generated.
 
 - **multiStream**
 
   - type: `boolean`
   - required: `false`
   - default: `true`
-  - It will specifiy if the stream should send multiple resolution layers or single resolution layer.
+  - It will specify if the stream should send multiple resolution layers or single resolution layer.
 
 :::info
 
@@ -114,12 +114,6 @@ let customTrack = await createCameraVideoTrack({
 - This method can be used to create audio track using different encoding parameters and noise cancellation configration.
 
 ### Parameters
-
-- **microphoneId**:
-
-  - type: `String`
-  - required: `false`
-  - It will be the id of the mic from which the audio should be captured.
 
 - **encoderConfig**:
 
@@ -207,7 +201,7 @@ Above mentioned encoder configurations are valid for both, landscape as well as 
   - type: `String`
   - required: `false`
   - Allowed values: `motion` | `text` | `detail`
-  - It will specifiy the optimization mode for the video track being generated.
+  - It will specify the optimization mode for the video track being generated.
 
 #### Returns
 

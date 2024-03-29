@@ -9,8 +9,6 @@ pagination_label: useMeeting Hook Event Callbacks
 
 <div class="sdk-api-ref-only-h4">
 
----
-
 ### onMeetingJoined()
 
 - This event callback is trigger when a local participant joins the meeting.
@@ -610,7 +608,7 @@ const {
 
 ---
 
-### onSwitchMeeting()
+<!-- ### onSwitchMeeting()
 
 - This event will be triggered when participant is requested to switch to another meeting.
 
@@ -701,7 +699,7 @@ const {
 });
 ```
 
----
+--- -->
 
 ### onError()
 

@@ -42,7 +42,7 @@ Visit, [app.videosdk.live](https://app.videosdk.live/) to gererate API Key and s
 
 ![Generate API Key from Dashboard](/img/tutorial/generate-api-key.jpg)
 
-## Generate Accees Token
+## Generate Access Token
 
 For security, every participant that connects to meeting needs a access token. By substituting `apikey` and `permissions` in it.
 

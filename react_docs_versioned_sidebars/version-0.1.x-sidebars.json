@@ -45,6 +45,7 @@
           "type": "category",
           "label": "Setup Call",
           "items": [
+            "guide/video-and-audio-calling-api-sdk/setup-call/precall",
             "guide/video-and-audio-calling-api-sdk/setup-call/initialise-meeting",
             "guide/video-and-audio-calling-api-sdk/setup-call/join-meeting",
             "guide/video-and-audio-calling-api-sdk/setup-call/waiting-lobby",
@@ -100,7 +101,8 @@
           "items": [
             "guide/video-and-audio-calling-api-sdk/collaboration-in-meeting/pubsub",
             "guide/video-and-audio-calling-api-sdk/collaboration-in-meeting/chat-using-pubsub",
-            "guide/video-and-audio-calling-api-sdk/collaboration-in-meeting/canvas-drawing-using-pubsub"
+            "guide/video-and-audio-calling-api-sdk/collaboration-in-meeting/canvas-drawing-using-pubsub",
+            "guide/video-and-audio-calling-api-sdk/collaboration-in-meeting/upload-fetch-temporary-file"
           ],
           "collapsed": true
         },
@@ -109,6 +111,8 @@
           "label": "Control Remote Participant",
           "items": [
             "guide/video-and-audio-calling-api-sdk/control-remote-participant/remote-participant-media",
+            "guide/video-and-audio-calling-api-sdk/control-remote-participant/switch-remote-participant-quality",
+            "guide/video-and-audio-calling-api-sdk/control-remote-participant/switch-remote-participant-camera",
             "guide/video-and-audio-calling-api-sdk/control-remote-participant/mute-all-participants",
             "guide/video-and-audio-calling-api-sdk/control-remote-participant/remove-participant"
           ],
@@ -206,6 +210,15 @@
     },
     {
       "type": "category",
+      "label": "useMediaDevice Hook (Beta)",
+      "items": [
+        "api/sdk-reference/use-mediaDevice/introduction",
+        "api/sdk-reference/use-mediaDevice/methods",
+        "api/sdk-reference/use-mediaDevice/events"
+      ]
+    },
+    {
+      "type": "category",
       "label": "useMeeting Hook",
       "items": [
         "api/sdk-reference/use-meeting/introduction",
@@ -235,15 +248,19 @@
     },
     {
       "type": "doc",
-      "id": "api/sdk-reference/use-connection"
-    },
-    {
-      "type": "doc",
       "id": "api/sdk-reference/use-pubsub"
     },
     {
       "type": "doc",
+      "id": "api/sdk-reference/use-file"
+    },
+    {
+      "type": "doc",
       "id": "api/sdk-reference/custom-tracks"
+    },
+    {
+      "type": "doc",
+      "id": "api/sdk-reference/network-statistics"
     },
     {
       "type": "doc",

@@ -50,7 +50,7 @@ Here is the simple sequence diagram represents the authentication.
 For Node server environment, refer this [GUIDE](https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example/blob/main/README.md), download the code sample [videosdk-rtc-nodejs-sdk-example](https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example) and for other server environment
 you can continue with below topic.
 
-### Generate Accees Token and integrate other API's
+### Generate Access Token and integrate other API's
 
 For security, every participant that connects to meeting needs a access token. By substituting `apikey` and `permissions` in it.
 

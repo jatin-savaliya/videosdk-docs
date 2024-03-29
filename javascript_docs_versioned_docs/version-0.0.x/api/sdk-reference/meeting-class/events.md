@@ -498,7 +498,7 @@ meeting.on("hls-stopped", () => {
 
 ---
 
-### connection-open
+<!-- ### connection-open
 
 - This event will be emitted when a new connection is open with other meeting.
 
@@ -565,7 +565,7 @@ meeting.on("switch-meeting", (data) => {
 });
 ```
 
----
+--- -->
 
 ### meeting-state-changed
 

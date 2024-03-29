@@ -129,17 +129,17 @@ title: Video SDK useParticipant Hook
 </div>
 <div class="col col--4 margin-bottom--sm" >
 
-- [switchTo](./methods#switchto)
-
-</div>
-<div class="col col--4 margin-bottom--sm" >
-
 - [getAudioStats](./methods.md#getaudiostats)
 
 </div>
 <div class="col col--4 margin-bottom--sm" >
 
 - [getVideoStats](./methods.md#getvideostats)
+
+</div>
+<div class="col col--4 margin-bottom--sm" >
+
+- [captureImage](./methods#captureimage)
 
 </div>
 </div>
