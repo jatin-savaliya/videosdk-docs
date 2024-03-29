@@ -42,7 +42,7 @@ Visit, [app.videosdk.live](https://app.videosdk.live/) to gererate API Key and s
 
 ![Generate API Key from Dashboard](/img/tutorial/generate-api-key.jpg)
 
-## Generate Accees Token
+## Generate Access Token
 
 For security, every participant that connects to meeting needs a access token. By substituting `apikey` and `permissions` in it.
 
@@ -401,8 +401,7 @@ import Hls from "hls.js";
 
 export default function VideoPlayer() {
   const videoRef = useRef(null);
-  const src =
-    "https://live.videosdk.live/live/cae23d5b-0c34-4429-a70b-0d597e5e0e96/index.m3u8";
+  const src = "https://live.videosdk.live/live/cae23d5b-0c34-4429-a70b-0d597e5e0e96/index.m3u8";
 
   useEffect(() => {
     let hls;
@@ -425,7 +424,7 @@ export default function VideoPlayer() {
           highBufferWatchdogPeriod: 0, // if media element is expected to play and if currentTime has not moved for more than highBufferWatchdogPeriod and if there are more than maxBufferHole seconds buffered upfront, hls.js will jump buffer gaps, or try to nudge playhead to recover playback.
           nudgeOffset: 0.05, // In case playback continues to stall after first playhead nudging, currentTime will be nudged evenmore following nudgeOffset to try to restore playback. media.currentTime += (nb nudge retry -1)*nudgeOffset
           nudgeMaxRetry: 1, // Max nb of nudge retries before hls.js raise a fatal BUFFER_STALLED_ERROR
-          maxFragLookUpTolerance: .1, // This tolerance factor is used during fragment lookup. 
+          maxFragLookUpTolerance: 0.1, // This tolerance factor is used during fragment lookup.
           liveSyncDurationCount: 1, // if set to 3, playback will start from fragment N-3, N being the last fragment of the live playlist
           abrEwmaFastLive: 1, // Fast bitrate Exponential moving average half-life, used to compute average bitrate for Live streams.
           abrEwmaSlowLive: 3, // Slow bitrate Exponential moving average half-life, used to compute average bitrate for Live streams.
@@ -447,13 +446,7 @@ export default function VideoPlayer() {
     };
   }, [videoRef]);
 
-  return (
-    <video
-      controls
-      ref={videoRef}
-      style={{ width: "100%", maxWidth: "500px" }}
-    />
-  );
+  return <video controls ref={videoRef} style={{ width: "100%", maxWidth: "500px" }} />;
 }
 ```
 
