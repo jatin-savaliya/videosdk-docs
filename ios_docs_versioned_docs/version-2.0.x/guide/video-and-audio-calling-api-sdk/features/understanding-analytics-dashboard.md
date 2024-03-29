@@ -33,7 +33,7 @@ Open Session Analytics effortlessly by following these steps:
     - Hover over a specific meeting row to reveal the **View Analytics** button in the Actions Column.
     - Click on **View Analytics** to open the Session Overview sidebar, unlocking a wealth of insights.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/85e81922-1e45-41cf-b2fa-e6d95a6852e9/93d0ef1a-da60-47f8-a7bc-c03b790d05b8/Untitled.png)
+![Access Analytics](https://cdn.videosdk.live/website-resources/docs-resources/access_analytics.png)
 
 ---
 
@@ -46,6 +46,12 @@ This tab provides an overview of the session, including its duration and partici
 ## **2. Errors**
 
 In this tab, you can find information about any errors encountered during the session. It helps you identify and address issues like network problems or technical glitches promptly.
+
+:::note
+
+Session errors are visible with JS SDK v0.0.82 or higher, React SDK v0.1.85 or higher, and React Native v0.1.6 or newer versions.
+
+:::
 
 ## **3. Session Stats**
 
@@ -80,12 +86,11 @@ Enhance your session management with streamlined actions:
 
 - **Kick Out Participants:** Effortlessly remove/kickout participants from ongoing sessions.
 - **Detailed Participant Analytics:**
-- Hover over a specific participant row to reveal the `View Analytics` button at the end of the row.
-- Click on `View Analytics` to open the Participant Overview sidebar.
+- Hover over a specific participant row to reveal the `View Stats` button at the end of the row.
+- Click on `View Stats` to open the Participant Overview sidebar.
     
-    
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/85e81922-1e45-41cf-b2fa-e6d95a6852e9/93db10b2-4f67-43df-b416-5a05f99a9533/Untitled.png)
+  
+![View Stats](https://cdn.videosdk.live/website-resources/docs-resources/view_stats.png)
 
 ## Explore Participant Insights
 
@@ -97,7 +102,7 @@ Discover valuable participant data that provides a clear view of engagement and 
 - **Left At:** Indicates the precise moment when participant left the session.
 - **Total Duration:** Total duration of participant within that session.
 - **Joining Time:** Time taken by the this participant to establish the connection.
-- **Location:** Approx. geographic location of from where the participant joined.
+- **Location:** Approx. geographic location from where the participant joined.
 - **Platform:** Specifies whether participants are using a desktop or mobile device.
 - **Device Info:** Offers details regarding the participant's device.
 - **OS:** Provides information about the participant's OS.
@@ -108,7 +113,7 @@ Discover valuable participant data that provides a clear view of engagement and 
 
 We've developed call health to offer a rapid assessment of participant performance during calls. This feature highlights the performance of audio, video, and screen sharing audio-video separately. We've utilized color theory, with green indicating good performance, orange for moderate, and red for poor performance, to enhance clarity. For detailed insights, simply hover over the bars
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/85e81922-1e45-41cf-b2fa-e6d95a6852e9/f60f0dfa-e85c-4086-8661-2d7a1f793440/Untitled.png)
+![Participant Call Health](https://cdn.videosdk.live/website-resources/docs-resources/participant_call_health.png)
 
 ## Participant Session Stats
 
@@ -120,10 +125,10 @@ Within this section, you can observe quality metrics for the selected participan
 
 This section provides a two-sided view of your session's metrics.
 
-- **Left Side: Sender Participant Graph** This section displays graphs representing the metrics sent by the selected by the participant. Here, you can see how the various factors impacted the data you transmitted.
+- **Left Side: Sender Participant Graph** This section displays graphs representing the metrics sent by the sender participant.. Here, you can see how the various factors impacted the data you transmitted.
 - **Right Side: Receiver Participant Graph** On the right side, you'll find a dropdown menu where you can select a specific participant. Choosing a receiver will display graphs showcasing the metrics **received by that participant**. This allows you to compare the sending experience (left side) with the receiving experience (right side) for different participants.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/85e81922-1e45-41cf-b2fa-e6d95a6852e9/618c9386-0f42-437b-8de3-06eaf7f94745/Untitled.png)
+![VideoSDK Jitter Graph](https://cdn.videosdk.live/website-resources/docs-resources/video_jitter_graph.png)
 
 **See How Your Session Performed**
 
@@ -141,9 +146,9 @@ These metrics give you a clear picture of your session's quality. Understanding 
 
 **FPS (Frames Per Second):** This measures how many images (frames) are displayed on your screen every second. Imagine it like a flipbook – a higher FPS creates a smoother and more fluid animation or video experience (**Video Only**).
 
-![image (6).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/85e81922-1e45-41cf-b2fa-e6d95a6852e9/2cf90949-6f28-464b-9a1a-5c426b1135e1/image_(6).png)
+![VideoSDK FPS Graph](https://cdn.videosdk.live/website-resources/docs-resources/video_fps_graph.png)
 
-![image (7).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/85e81922-1e45-41cf-b2fa-e6d95a6852e9/e7f937ef-aa10-4e4b-a633-e87091e7e528/image_(7).png)
+![VideoSDK Resolution Graph](https://cdn.videosdk.live/website-resources/docs-resources/video_resolution_graph.png)
 
 ---
 
@@ -154,3 +159,5 @@ Similar to `Participant Session Stats`, this tab covers quality statistics sent 
 Choose a sender participant from the dropdown menu on the left and select a recipient on the right to compare data over different time frames. This allows you to identify and explore issues within specific durations.
 
 This tab covers the same metrics as covered in the `participant session stats`: Jitter, RTT (Latency), Bitrate, Packet-loss, Resolution (Video only), and FPS (Video only).
+
+![VideoSDK Session Stats](https://cdn.videosdk.live/website-resources/docs-resources/session_stats.png)

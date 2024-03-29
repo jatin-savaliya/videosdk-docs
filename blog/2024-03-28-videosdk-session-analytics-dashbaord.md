@@ -18,7 +18,7 @@ Welcome to the world of actionable insights and empowered decision-making. Video
 
 Navigating through session data is a breeze with VideoSDK. Simply head to your session page at https://app.videosdk.live/meetings/sessions, where a treasure trove of session information awaits.
 
-### How to Access Analytics?
+### How to Access Analytics? 
 
 Open Session Analytics effortlessly by following these steps:
 
@@ -75,12 +75,10 @@ Enhance your session management with streamlined actions:
 
 - **Kick Out Participants:** Effortlessly remove/kickout participants from ongoing sessions.
 - **Detailed Participant Analytics:**
-- Hover over a specific participant row to reveal the `View Analytics` button at the end of the row.
-- Click on `View Analytics` to open the Participant Overview sidebar.
+- Hover over a specific participant row to reveal the `View Stats` button at the end of the row.
+- Click on `View Stats` to open the Participant Overview sidebar.
     
-    
-
-![View Analytics](https://cdn.videosdk.live/website-resources/docs-resources/view_analytics.png)
+![View Stats](https://cdn.videosdk.live/website-resources/docs-resources/view_stats.png)
 
 ## Explore Participant Insights
 
@@ -92,7 +90,7 @@ Discover valuable participant data that provides a clear view of engagement and 
 - **Left At:** Indicates the precise moment when participant left the session.
 - **Total Duration:** Total duration of participant within that session.
 - **Joining Time:** Time taken by the this participant to establish the connection.
-- **Location:** Approx. geographic location of from where the participant joined.
+- **Location:** Approx. geographic location from where the participant joined.
 - **Platform:** Specifies whether participants are using a desktop or mobile device.
 - **Device Info:** Offers details regarding the participant's device.
 - **OS:** Provides information about the participant's OS.
@@ -115,7 +113,7 @@ Within this section, you can observe quality metrics for the selected participan
 
 This section provides a two-sided view of your session's metrics.
 
-- **Left Side: Sender Participant Graph** This section displays graphs representing the metrics sent by the selected by the participant. Here, you can see how the various factors impacted the data you transmitted.
+- **Left Side: Sender Participant Graph** This section displays graphs representing the metrics sent by the sender participant. Here, you can see how the various factors impacted the data you transmitted.
 - **Right Side: Receiver Participant Graph** On the right side, you'll find a dropdown menu where you can select a specific participant. Choosing a receiver will display graphs showcasing the metrics **received by that participant**. This allows you to compare the sending experience (left side) with the receiving experience (right side) for different participants.
 
 ![VideoSDK Jitter Graph](https://cdn.videosdk.live/website-resources/docs-resources/video_jitter_graph.png)
@@ -150,7 +148,7 @@ Get to the root of smoother sessions by addressing errors directly. Use the Erro
 - **Error Types:** Understand the different types of errors encountered, such as network issues or connection disruptions.
 - **Detailed Descriptions:** Access clear explanations of errors to take actionable steps towards solution.
 
-![VideoSDK Error Details](https://cdn.videosdk.live/website-resources/docs-resources/error_details.png)
+![VideoSDK Error Details](https://cdn.videosdk.live/website-resources/docs-resources/error_new.png)
 
 # **Analyse Session Stats**
 
