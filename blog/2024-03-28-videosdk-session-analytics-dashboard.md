@@ -3,7 +3,7 @@ title: Unlock Insights with VideoSDK's Session Analytics Dashboard
 description: Unlock valuable insights and optimize your sessions with our comprehensive session analysis tutorial. Explore participant insights, understand call health, and analyze session statistics for enhanced performance indicators.
 keywords:
   - videosdk session analytics
-slug: videosdk-session-analytics-dashbaord
+slug: videosdk-session-analytics-dashboard
 tags: [Session Analytics]
 hide_table_of_contents: false
 ---
