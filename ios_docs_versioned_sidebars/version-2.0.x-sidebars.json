@@ -39,6 +39,7 @@
         "guide/video-and-audio-calling-api-sdk/features/record-meeting",
         "guide/video-and-audio-calling-api-sdk/features/go-live-social-media",
         "guide/video-and-audio-calling-api-sdk/features/interactive-livestream",
+        "guide/video-and-audio-calling-api-sdk/features/understanding-analytics-dashboard",
         "guide/video-and-audio-calling-api-sdk/features/error-events"
       ],
       "collapsed": true
