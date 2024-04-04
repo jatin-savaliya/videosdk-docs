@@ -507,7 +507,13 @@ When the host initiates the live streaming, viewers will be able to watch it.
 
 To implement the player view, you have to use `hls.js`. It will be helpful for playing the HLS stream. The script of `hls.js` file already added in the `index.html` file.
 
-Now on the `hls-state-changed` event, when participant mode is set to `VIEWER` and the status of hls is `HLS_PLAYABLE`, pass the downstreamUrl to the hls.js and play it.
+
+Now on the `hls-state-changed` event, when participant mode is set to `VIEWER` and the status of hls is `HLS_PLAYABLE`, we will pass the playbackHlsUrl to the hls.js and play it.
+
+:::note
+`downstreamUrl` is now depecated. Use `playbackHlsUrl` or `livestreamUrl` in place of `downstreamUrl`
+:::
+
 
 ```js title="index.js"
 // Initialize meeting
@@ -522,7 +528,7 @@ function initializeMeeting() {
 
     if (mode === Constants.modes.VIEWER) {
       if (status === Constants.hlsEvents.HLS_PLAYABLE) {
-        const { downstreamUrl } = data;
+        const { playbackHlsUrl } = data;
         let video = document.createElement("video");
         video.setAttribute("width", "100%");
         video.setAttribute("muted", "false");
@@ -551,13 +557,13 @@ function initializeMeeting() {
             abrEwmaSlowVoD: 3, // Slow bitrate Exponential moving average half-life, used to compute average bitrate for VoD streams
             maxStarvationDelay: 1, // ABR algorithm will always try to choose a quality level that should avoid rebuffering
           });
-          hls.loadSource(downstreamUrl);
+          hls.loadSource(playbackHlsUrl);
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          video.src = downstreamUrl;
+          video.src = playbackHlsUrl;
           video.addEventListener("canplay", function () {
             video.play();
           });

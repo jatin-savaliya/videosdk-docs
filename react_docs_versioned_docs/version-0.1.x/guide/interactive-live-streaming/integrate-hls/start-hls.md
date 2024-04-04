@@ -129,7 +129,13 @@ If a pinned participant begins screenshare, only the screenshare view will be vi
 
 - **onHlsStateChanged** - The `onHlsStateChanged()` event is triggered whenever the state of meeting HLS changes.
 
-- You can get the `downstreamUrl` of the HLS to play on the Viewer side when the state changes to `Constants.hlsEvents.HLS_PLAYABLE` as well as from the `hlsUrls` from the `useMeeting` hook.
+- You can get the `playbaclHlsUrl` and `livestreamUrl` of the HLS to play it on the Viewer side when the state changes to `Constants.hlsEvents.HLS_PLAYABLE` as well as from the `hlsUrls` from the `useMeeting` hook.
+  - `playbackHlsUrl` - Live HLS with playback support
+  - `livestreamUrl` - Live HLS without playback support
+
+:::note
+`downstreamUrl` is now depecated. Use `playbackHlsUrl` or `livestreamUrl` in place of `downstreamUrl`
+:::
 
 ```js
 import { Constants, useMeeting } from "@videosdk.live/react-sdk";
@@ -143,8 +149,8 @@ function onHlsStateChanged(data) {
     console.log("Meeting Hls is started");
   }else if (status === Constants.hlsEvents.HLS_PLAYABLE) {
     //highlight-start
-    // on hlsStateChanged started you will receive downstreamUrl
-    const { downstreamUrl } = data;
+    // on hlsStateChanged started you will receive  playbackHlsUrl and livestreamUrl.
+    const { playbackHlsUrl } = data;
     //highlight-end
     console.log("Meeting Hls is Playable");
   } else if (status === Constants.hlsEvents.HLS_STOPPING) {

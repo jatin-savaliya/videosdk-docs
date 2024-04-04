@@ -333,7 +333,7 @@ You can create your own custom template manager in JavaScript. In this example, 
     };
 
     const result = await fetch(url, options)
-      .then((response) => response.json()) // result will have downstreamUrl
+      .then((response) => response.json()) // result will have playbackHlsUrl and livestreamUrl
       .catch((error) => console.error("error", error));
   }}
 >

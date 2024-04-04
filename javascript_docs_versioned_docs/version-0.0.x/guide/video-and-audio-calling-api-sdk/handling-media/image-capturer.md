@@ -228,7 +228,29 @@ The file stored in the [VideoSDK's temporary file storage system](/javascript/gu
 
 The API references for all the methods utilized in this guide are provided below.
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+
+- # [stream-enabled](/javascript/api/sdk-reference/participant-class/events#stream-enabled)
+  =======
+  > > > > > > > # Stashed changes
+  > > > > > > >
+  > > > > > > > Stashed changes
+- [captureImage](/javascript/api/sdk-reference/participant-class/methods#captureimage)
+- [pub-sub](/javascript/api/sdk-reference/meeting-class/properties#pubsub)
+- [uploadbase64file](/javascript/api/sdk-reference/meeting-class/methods#uploadbase64file)
+- [fetchbase64file](javascript/api/sdk-reference/meeting-class/methods#fetchbase64file)
+  <<<<<<< Updated upstream
+  <<<<<<< Updated upstream
+  > > > > > > > # Stashed changes
+  > > > > > > >
+  > > > > > > > # Stashed changes
+  > > > > > > >
+  > > > > > > > # Stashed changes
 - [captureImage](/javascript/api/sdk-reference/participant-class/methods#captureimage)
 - [pub-sub](/javascript/api/sdk-reference/meeting-class/properties#pubsub)
 - [uploadbase64file](/javascript/api/sdk-reference/meeting-class/methods#uploadbase64file)
 - [fetchbase64file](/javascript/api/sdk-reference/meeting-class/methods#fetchbase64file)
+  > > > > > > > main
