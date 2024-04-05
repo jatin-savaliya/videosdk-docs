@@ -43,7 +43,7 @@
         {
           "id": "abcdef9879288c1f48339f64",
           "status": "released",
-          "type": "filecomposer",
+          "type": "recording",
           "mode": "video-and-audio",
           "quality": "med",
           "composerIds": ["abcdef9879288c1f48339f54"],
